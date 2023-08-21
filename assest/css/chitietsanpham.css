@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.productDetail-page {
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+ol {
+    display: flex;
+}
+
+ol li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ol li:first-child {
+    margin-left: 0;
+}
+
+ol li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.link-header a:hover {
+    color: #eb5886;
+    transition: color 0.3s linear;
+}
+
+/* Chi Tiết Sản Phẩm */
+.product-detail-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.product-img img {
+    width: 360px;
+    height: 360px;
+}
+
+.detail-product {
+    margin-left: 30px;
+}
+
+#pro_sku {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #a3a5a7;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #000;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.selector-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn-selector {
+    position: relative;
+    padding: 16px 120px;
+    cursor: pointer;
+    border: 1px solid #eb5886;
+    border-radius: 40px;
+    text-transform: uppercase;
+    z-index: 999;
+    background-color: #fff;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.btn-selector::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #eb5886;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: right 0.5s linear;
+
+}
+
+.active2 {
+    color: #eb5886;
+}
+
+.btn-selector:hover::before {
+    right: 100%;
+}
+
+#heartProduct {
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+.selector-buyxgety {
+    position: relative;
+    margin: 20px 0;
+    border: 2px dotted #f2acb9;
+    padding: 14px;
+    min-height: 100px;
+    z-index: 0;
+}
+
+.buyxgety-heading {
+    position: relative;
+    padding: 5px 10px;
+}
+
+.buyxgety-heading::after {
+    position: absolute;
+    content: "";
+    background-image: url(/MOI_my_pham/chi_tiet_sp/appbuyxgety-icon.webp);
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.buyxgety-heading h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.buyxgety-heading p {
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.buyxgety_item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
+}
+
+.policyProduct {
+    margin-top: 40px;
+}
+
+.policyProduct li{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.policyProduct img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.infoPolicy h5 {
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.infoPolicy span {
+    font-size: 14px;
+    color: #a7a8a9;
+}
+
+/* product-description */
+.product-description {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.nav-tabs {
+    border: 1px solid #dddddd;
+}
+
+.nav-tabs li {
+    list-style: none;
+    padding: 20px 20px;
+}
+
+/* description-productdetail */
+.tab-content {
+    border: 1px solid #dddddd;
+    padding: 20px 20px;
+}
+
+.description-productdetail li {
+    list-style: none;
+}
+
+.description-productdetail p {
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+
+/* starbap-rev-widg__header */
+.starbap-rev-widg__header {
+    margin-top: 30px;
+}
+
+.starbap-rev-widg__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.starbap-rev-widg__title {
+    margin-bottom: 16px;
+    font-weight: 600
+}
+
+.stars i {
+    font-size: 14px;
+    color: rgb(215, 215, 76);
+    margin-bottom: 4px;
+}
+
+.starbap-ask-question-btn {
+    margin-right: 10px;
+}
+
+.starbap-ask-question-btn,
+.starbap-write-rev-link {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    border-radius: 4px;
+    border: 1px solid #000;
+    padding: 10px 30px;
+}
+
+.starbap-ask-question-btn::before {
+    position: absolute;
+    content: "";
+    background-image: url(/MOI_my_pham/chi_tiet_sp/commnet.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+}
+
+.starbap-write-rev-link::before {
+    position: absolute;
+    content: "";
+    background-image: url(/MOI_my_pham/chi_tiet_sp/weite.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+}
+
+a:hover, a:focus {
+    color: #eb5886;
+    text-decoration: none;
+    outline: none;
+}
+
+.starbap-subtab {
+    margin-top: 30px;
+    border-bottom: 1px solid #5e5d5d;
+    padding-bottom: 6px;
+}
+
+.starbap-subtab__name:first-child {
+    margin-right: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    padding-bottom: 6px;
+}
+
+.starbap-subtab__count {
+    background-color: #eee;
+    padding: 4px 6px;
+    border-radius: 2px;
+}
+
+.content-faqs-product {
+    display: flex;
+    border: 1px solid #dddddd;
+    margin-top: 30px;
+}
+
+.title {
+    width: 20%;
+    background-color: #f17389;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h4 {
+    font-size: 50px;
+    padding: 100px 0;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.content-faqs {
+    flex: 1;
+    width: 80%;
+    padding: 30px 50px;
+}
