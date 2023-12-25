@@ -12,9 +12,7 @@ html {
 }
 
 /* header */
-.header {
-    
-}
+.header {}
 
 .intro {
     display: flex;
@@ -77,7 +75,7 @@ html {
     cursor: pointer;
 }
 
-.count-card span{
+.count-card span {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -94,10 +92,10 @@ html {
 .text-icon span,
 .count-card span {
     font-size: 20px;
-    
+
 }
 
-/* nav */ 
+/* nav */
 .header-nav {
     position: sticky;
     top: 0;
@@ -168,7 +166,7 @@ html {
     transition: transform 0.3s;
 }
 
-.nav-list--item:hover .icon-down  {
+.nav-list--item:hover .icon-down {
     transform: rotate(180deg);
 }
 
@@ -177,7 +175,7 @@ html {
     bottom: -674px;
 }
 
-.nav li > .sub-menu:last-child {
+.nav li>.sub-menu:last-child {
     bottom: -342px;
 }
 
@@ -199,6 +197,7 @@ html {
     0% {
         transform: rotate3d(1, 0, 0, 90deg);
     }
+
     100% {
         transform: rotate3d(1, 0, 0, 0deg);
     }
@@ -208,12 +207,13 @@ html {
     display: none;
 }
 
-.nav .nav-list--item:hover .sub-menu{
+.nav .nav-list--item:hover .sub-menu {
     display: block;
 }
 
 .nav-list--item:hover .sub-menu {
-    transform: rotate3d(1, 0, 0, 0); /* Áp dụng hiệu ứng quay khi hover */
+    transform: rotate3d(1, 0, 0, 0);
+    /* Áp dụng hiệu ứng quay khi hover */
 }
 
 .sub-menu--box {
@@ -266,6 +266,10 @@ html {
 }
 
 /* slider */
+.slider {
+    margin-top: 180px;
+}
+
 .slider img {
     width: 100%;
     height: 602px;
@@ -274,7 +278,7 @@ html {
 .section-banner-index {
     width: 88%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 632px;
 }
 
 .banner {
@@ -365,7 +369,7 @@ html {
     padding: 20px 0;
 }
 
-.pro-name a{
+.pro-name a {
     display: block;
     color: #252a2b;
     text-decoration: none;
@@ -496,8 +500,7 @@ html {
     margin-right: 20px;
 }
 
-.img-blog {
-}
+.img-blog {}
 
 .title-blog {
     margin: 14px 0 20px 0;
@@ -533,7 +536,9 @@ html {
 @keyframes runSlider {
     form {
         transform: translateX(0);
-    } to {
+    }
+
+    to {
         transform: translateX(calc(-300px * 7));
     }
 }
@@ -599,7 +604,7 @@ html {
     cursor: pointer;
     transform: scale(1.0);
     transition: transform 0.3s linear;
-    
+
 }
 
 .btn:hover {
@@ -797,9 +802,9 @@ html {
 }
 
 .card:hover::before {
-    
+
     right: 100%;
-} 
+}
 
 .ipay {
     position: relative;
@@ -834,12 +839,12 @@ html {
 
 .ipay:hover::after {
     left: 100%;
-} 
+}
 
 /* end */
 
 
-.end .gach_ngang{
+.end .gach_ngang {
     content: "";
     background: #fcf5f5;
     display: block;
@@ -848,7 +853,8 @@ html {
     /* margin-top: 50px; */
     position: relative;
 }
-.banquyen_and_logoBCT{
+
+.banquyen_and_logoBCT {
     display: flex;
     width: 96%;
     margin: 0 auto;
@@ -859,18 +865,21 @@ html {
     margin: 0 auto;
 } */
 
-.ban-quyen{
+.ban-quyen {
     width: 70%;
     margin: 37px 55px;
 }
-.ban-quyen span{
+
+.ban-quyen span {
     font-weight: bold;
 }
-.logo_BCT{
+
+.logo_BCT {
     width: 30%;
     /* margin: 36px -25px; */
 }
-.logo_BCT img{
+
+.logo_BCT img {
     position: relative;
     left: 130px;
     top: 31px;
